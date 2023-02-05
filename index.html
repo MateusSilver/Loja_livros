@@ -11,6 +11,8 @@
 	<link rel="stylesheet" href="./assets/styles/reset.css">
 	<link rel="stylesheet" href="./assets/styles/basics.css">
 	<link rel="stylesheet" href="./assets/styles/header.css">
+	<link rel="stylesheet" href="./assets/styles/search_box.css">
+	<link rel="stylesheet" href="./assets/styles/contend.css">
 	
 </head>
 <body>
@@ -23,11 +25,29 @@
 				<li>Home</li>
 				<li>Sobre nós</li>
 			</ul>
-			<input type="text">
+			<div class="search_box">
+				<input class="search_txt"
+					type="text" 
+					name="" 
+					placeholder="Buscar"
+				>
+				<a href="#" class="Search_btn">
+					<span class="btn_click">🔍</span>
+				</a>
+				<!--substituts "fa- fa-search" in localhost-->
+				
+			</div>
 		</nav>
 	</header>
-	<h1>loja de livros</h1>
-	<h2>o lugar para o seu livro</h2>
-	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, hic. Quas modi magnam autem delectus illum facilis enim laboriosam amet ea? Ad qui consequatur est possimus recusandae dolorum, voluptatem soluta?</p>
+	<div class="contend">
+		<h1>The House of Literature</h1>
+		<section class="highlights">
+			<div class="principal_highlights"><h3>1618</h3></div>
+			<div class="secundary_highlights"><h3>Quadrinhos</h3></div>
+			<div class="secundary_highlights"><h3>Mangás</h3></div>
+			<div class="secundary_highlights"><h3>Terror</h3></div>
+		</section>
+	</div>
+	
 </body>
 </html>
