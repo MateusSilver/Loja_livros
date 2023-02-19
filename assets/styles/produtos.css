@@ -1,0 +1,43 @@
+.produtos-contend {
+    align-items: center;
+
+}
+
+.produtos-contend h1 {
+    padding: 62px 45px;
+}
+
+.produtos-line {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    background-color: bisque;
+    width: 20%;
+    border-radius: 25px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.card:hover {
+    background-color: #EFE9F4;
+    transform: scale(1.025);
+    transition: all 0.1s ease-in;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 25px 25px 0 0;
+}
+
+.card h2 {
+    margin: 5px;
+    text-align: center;
+}
+
+.card p {
+    margin: 10px;
+    text-align: justify;
+}

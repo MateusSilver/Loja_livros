@@ -62,3 +62,13 @@
     grid-column: 3 / 5;
     grid-row: 4 / 6 ;
 }
+
+.highlights .secundary_highlights:hover {
+    transform: scale(1.01);
+    transition: all 0.1s ease-in;
+}
+
+.highlights .principal_highlights:hover {
+    transform: scale(1.01);
+    transition: all 0.1s ease-in;
+}
