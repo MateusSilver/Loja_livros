@@ -1,0 +1,21 @@
+footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    padding: 25px 25px 50px 25px;
+}
+
+.footer_column {
+    width: 20%;
+}
+
+.footer_column ul li {
+    padding: 5px 0;
+    cursor: pointer;
+}
+
+.footer_column ul li:hover {
+    color: #cd0a20;
+}
