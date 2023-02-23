@@ -1,0 +1,16 @@
+.botao_flutuante {
+    width: 4%;
+    right: 2%;
+    bottom: 6%;
+    position: fixed;
+    z-index: 1;
+    transition: all .2s;
+}
+
+.botao_flutuante:hover {
+    transform: translate(0,-5%);
+}
+
+.botao_flutuante img {
+    width: 100%;
+}
