@@ -15,7 +15,8 @@
 }
 
 .card {
-    background-color: bisque;
+    background-color: #ccc;
+    color: #1c1c1c;
     width: 20%;
     border-radius: 25px;
     margin: 20px;
@@ -23,7 +24,7 @@
 }
 
 .card:hover {
-    background-color: #EFE9F4;
+    background-color: #ccc;
     transform: scale(1.025);
     transition: all 0.1s ease-in;
 }

@@ -4,6 +4,7 @@
 
 .contend h1 {
     margin: 30px 0;
+    color: white;
 }
 
 .highlights {
@@ -13,62 +14,62 @@
     height: calc(100vh - 50px);
 }
 
-.highlights .principal_highlights {
+.highlights  .principal_highlights {
     background: url('../img/cesar.JPG') center / cover no-repeat;
     grid-column: 1 / 3;
     grid-row: 1 / 6;
     margin: 5px;
 }
 
-.highlights .principal_highlights {
+.highlights  .principal_highlights {
     margin: 5px 5px 5px 0;
     display: flex;
 }
 
 
-.highlights .secundary_highlights {
+.highlights  .secundary_highlights {
     display: flex;
     margin: 5px;
 }
 
-.highlights .principal_highlights  h3{
+.highlights  .principal_highlights  h3{
     color: bisque;
     width: 100%;
     text-align: center;
     padding: 5px;
 }
 
-.highlights .secundary_highlights  h3{
+.highlights  .secundary_highlights  h3{
     color: bisque;
     width: 100%;
     text-align: right;
     padding: 5px;
 }
 
-.highlights .secundary_highlights:nth-child(2) {
+.highlights  .secundary_highlights:nth-child(2) {
     background: url('../img/quadrinhos.webp') center / cover no-repeat;
     grid-column: 3 / 5;
     grid-row: 1 / 3 ;
 }
 
-.highlights .secundary_highlights:nth-child(3) {
+.highlights  .secundary_highlights:nth-child(3) {
     background: url('../img/mangas.png') center / cover no-repeat;
     grid-column: 3 / 5;
     grid-row: 3 / 4 ;
 }
 
-.highlights .secundary_highlights:nth-child(4) {
+.highlights  .secundary_highlights:nth-child(4) {
     background: url('../img/terror.jpg') center / cover no-repeat;
     grid-column: 3 / 5;
     grid-row: 4 / 6 ;
 }
 
-.highlights .secundary_highlights:hover {
+.highlights  .secundary_highlights:hover {
     transform: scale(1.01);
     transition: all 0.1s ease-in;
 }
 
-.highlights .principal_highlights:hover {
+.highlights  .principal_highlights:hover {
     transform: scale(1.01);
     transition: all 0.1s ease-in;
 }

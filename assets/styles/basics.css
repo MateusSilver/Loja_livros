@@ -7,7 +7,8 @@
 body {
     background-color: rgb(253, 249, 243);
     font-family: 'Roboto', sans-serif;
-    color: #1c1c1c;
+    color: #fff;
+    background-color: #1c1c1c;
     width: auto;
     padding: 0;
 }

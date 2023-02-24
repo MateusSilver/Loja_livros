@@ -1,12 +1,14 @@
 header {
-    background-color: bisque;
+    background-color: #000;
 }
 
 .letreiro {
     width: 100%;
+    color: #1c1c1c;
     background-color: #ffc105;
     text-align: center;
     padding: 4px 0;
+    cursor: default;
 }
 
 nav {
@@ -25,6 +27,7 @@ nav ul li {
     display: inline;
     margin: 0 8px;
     padding: 12px 12px;
+    color: #fff;
 
     cursor: pointer;
 }
