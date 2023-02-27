@@ -35,27 +35,29 @@ inicializarLoja = () => {
     var produtos = document.getElementById('produtos-line')
     itens.map((val) => {
         produtos.innerHTML += `<div class="card">
-        <div class="card_img">
-            <img src="assets/img/produtos/`+ val.id + `.jpg" alt="` + val.nome + `" />
-        </div>
-        <h2>` + val.nome + `</h2>
-        <p>`+ val.autor +`</p>
-        <div class="preco">R$ ` + val.preco.toFixed(2).replace('.',',') + `</div>
-        <a id="add" key="` + val.id + `" href="">Adicionar ao carrinho</a>
+            <div class="card_img">
+                <img src="assets/img/produtos/`+ val.id + `.jpg" alt="` + val.nome + `" />
+            </div>
+            <h2>` + val.nome + `</h2>
+            <p>`+ val.autor +`</p>
+            <div class="preco">R$ ` + val.preco.toFixed(2).replace('.',',') + `</div>
+            <a id="add" key="` + val.id + `" href="#">Adicionar ao carrinho</p>
         </div>`;
     });
 }
 
 inicializarLoja();
 
+
+
 atualizarCarrinho = () => {
     console.log(itens);
 }
 
-var links = document.getElementById('add');
+var links = document.getElementsByTagName('a');
 
 for(var i = 0; i < links.length; i++){
-    links[i].addEventListener("click", function(){
+    links[i].addEventListener("click",function(){
         let key = this.getAttribute('key');
         itens[key].quantidade++;
         atualizarCarrinho();
@@ -65,12 +67,13 @@ for(var i = 0; i < links.length; i++){
 
 
 inicializarCarrinho = () => {
-    var carrinhos = document.getElementById('carrinho')
-    itens.map((val) => {
-        if(val.quantidade>0){
-            carrinhos.innerHTML += `
+    var carrinhos = document.getElementById('carrinho');
+    carrinhos.innerHTML = "";
+    itens.map(function (val) {
+        if (val.quantidade > 0) {
+            carrinhos.innerHTML = `
             <p>` + val.nome + ` | quantidade: ` + val.quantidade + `</p>
-            <hr></hr>`
+            <hr></hr>`;
         }
     });
 }
